@@ -7,7 +7,7 @@ const BLOCK_W = 64, BLOCK_H = 32;       // sprite 32×16 escalado ×2
 const GRID_X = 80, GRID_Y = 60;         // grilla centrada: 10×64 = 640
 const ROW_COLORS = ['red', 'yellow', 'cyan', 'magenta', 'hotpink', 'green'];
 const POINTS_PER_BLOCK = 10;
-const BALL_SPEED_START = 5, BALL_SPEED_STEP = 0.1, BALL_SPEED_MAX = 9;
+const BALL_SPEED_START = 2.5, BALL_SPEED_STEP = 0.1, BALL_SPEED_MAX = 9;
 const MAX_BOUNCE_ANGLE = 60;            // grados respecto a la vertical
 const PADDLE_KEY_SPEED = 8;
 const START_LIVES = 3;

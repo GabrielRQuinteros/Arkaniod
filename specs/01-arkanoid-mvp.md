@@ -40,7 +40,7 @@ const state = {
   lives: 3,
   menuIndex: 0,        // opción resaltada (menú de inicio o de pausa)
   paddle: { x: 340, y: 560, w: 120, h: 14 },
-  ball:   { x: 0, y: 0, r: 8, vx: 0, vy: 0, speed: 5, stuck: true },
+  ball:   { x: 0, y: 0, r: 8, vx: 0, vy: 0, speed: 2.5, stuck: true },
   blocks: [],          // { x, y, w, h, color, alive, explodeT } ; w=64, h=32
   explosions: [],      // bloques en animación: { block, startedAt }
   lastResult: null,    // 'victory' | 'gameover' en pantalla final
@@ -53,7 +53,7 @@ const BLOCK_W = 64, BLOCK_H = 32;       // sprite 32×16 escalado ×2
 const GRID_X = 80, GRID_Y = 60;         // grilla centrada: 10×64 = 640
 const ROW_COLORS = ['red', 'yellow', 'cyan', 'magenta', 'hotpink', 'green'];
 const POINTS_PER_BLOCK = 10;
-const BALL_SPEED_START = 5, BALL_SPEED_STEP = 0.1, BALL_SPEED_MAX = 9;
+const BALL_SPEED_START = 2.5, BALL_SPEED_STEP = 0.1, BALL_SPEED_MAX = 9;
 const MAX_BOUNCE_ANGLE = 60;            // grados respecto a la vertical
 const PADDLE_KEY_SPEED = 8;
 
